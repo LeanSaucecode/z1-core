@@ -146,16 +146,16 @@ const channel = task(t => ({
 | match              | :heavy_check_mark: |                                                      | [match](./src/sync.js#L116)                                                     |
 | to                 |                    | t.to.fn(string)                                      | [to](https://ramdajs.com/docs/#addIndex)                                        |
 | caseTo             |                    | t.caseTo(string)                                     | Same as above `to` fn                                                           |
-| html               |                    | t.html(string)                                       | [html](https://github.com/zspecza/common-tags#html)                             |
-| safeHtml           |                    | t.safeHtml(string)                                   | [safeHtml](https://github.com/zspecza/common-tags#safehtml)                     |
-| oneLine            |                    | t.oneLine(`multiline string`)                        | [oneLine](https://github.com/zspecza/common-tags#oneLine)                       |
-| oneLineTrim        |                    | t.oneLineTrim(`multiline string`)                    | [oneLineTrim](https://github.com/zspecza/common-tags#oneLineTrim)               |
-| stripIndent        |                    | t.stripIndent(string)                                | [stripIndent](https://github.com/zspecza/common-tags#stripIndent)               |
-| stripIndents       |                    | t.stripIndents(string)                               | [stripIndents](https://github.com/zspecza/common-tags#stripIndents)             |
-| inlineLists        |                    | t.lineLists(string)                                  | [inlineLists](https://github.com/zspecza/common-tags#inlineLists)               |
-| oneLineInlineLists |                    | t.oneLineInlineLists(list)                           | [oneLineInlineLists](https://github.com/zspecza/common-tags#oneLineInlineLists) |
-| commaLists         |                    | t.commaLists(list)                                   | [commaLists](https://github.com/zspecza/common-tags#commaLists)                 |
-| oneLineCommaLists  |                    | t.oneLineCommaLists(list)                            | [oneLineCommaLists](https://github.com/zspecza/common-tags#oneLineCommaLists)   |
+| html               |                    | t.tags.html(string)                                       | [html](https://github.com/zspecza/common-tags#html)                             |
+| safeHtml           |                    | t.tags.safeHtml(string)                                   | [safeHtml](https://github.com/zspecza/common-tags#safehtml)                     |
+| oneLine            |                    | t.tags.oneLine(`multiline string`)                        | [oneLine](https://github.com/zspecza/common-tags#oneLine)                       |
+| oneLineTrim        |                    | t.tags.oneLineTrim(`multiline string`)                    | [oneLineTrim](https://github.com/zspecza/common-tags#oneLineTrim)               |
+| stripIndent        |                    | t.tags.stripIndent(string)                                | [stripIndent](https://github.com/zspecza/common-tags#stripIndent)               |
+| stripIndents       |                    | t.tags.stripIndents(string)                               | [stripIndents](https://github.com/zspecza/common-tags#stripIndents)             |
+| inlineLists        |                    | t.tags.lineLists(string)                                  | [inlineLists](https://github.com/zspecza/common-tags#inlineLists)               |
+| oneLineInlineLists |                    | t.tags.oneLineInlineLists(list)                           | [oneLineInlineLists](https://github.com/zspecza/common-tags#oneLineInlineLists) |
+| commaLists         |                    | t.tags.commaLists(list)                                   | [commaLists](https://github.com/zspecza/common-tags#commaLists)                 |
+| oneLineCommaLists  |                    | t.tags.oneLineCommaLists(list)                            | [oneLineCommaLists](https://github.com/zspecza/common-tags#oneLineCommaLists)   |
 | globrex            |                    | t.globrex(pattern).regex.test(string)                | [globrex](https://github.com/terkelg/globrex)                                   |
 | throttle           |                    | t.throttle(fn, number [options={}])                  | [throttle](https://lodash.com/docs/#throttle)                                   |
 | trampoline         | :heavy_check_mark: | t.trampoline(async function rollup(props){})         | [trampoline](./src/sync.js#L122)                                                |
